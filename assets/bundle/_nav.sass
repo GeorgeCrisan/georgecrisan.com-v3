@@ -1,0 +1,118 @@
+
+@keyframes fadein 
+  0%
+    color: #ec87ff
+
+  50%
+     color: #0FFFFF  
+  100%
+    color: #ec87ff
+  
+.navbar-dark .navbar-nav .nav-link
+  color: #0FFFFF
+  font-family: 'Mina', sans-serif
+  &:hover , &:active
+    color: #ec87ff
+
+.tipic-menu
+  color: #ec87ff
+  transition-duration: 1s
+  display: block
+  border-radius: 20px
+  font-size: 17px
+  left: 5px
+  position: relative
+
+.change-color 
+  transition-duration: 1s
+
+  color: #fff
+
+
+ 
+
+
+
+.nav-link:visited
+  color: white  
+
+.center-class-nav-flex
+  justify-content: center      
+
+.navbar-dark .navbar-toggler 
+  width: 80px
+  margin-left: auto
+  border: none
+  outline: none
+  
+
+
+
+.navbar-dark .navbar-toggler-icon
+  background-image: none
+  display: flex
+  flex-flow: column nowrap
+  justify-content: center
+  align-content: center
+
+.jumbotron-custom
+  height: 500px
+  background: #343a40 
+  .little-box
+    color: white
+    font-family: 'Mina', sans-serif
+    padding: 200px
+    text-align: center
+    animation: fadein ease-in-out 5s infinite
+    h1 
+      font-size: 22px
+      margin:  0 20%
+
+    
+    
+
+
+    
+
+@media only screen and (max-width: 467px) 
+  .jumbotron-custom
+    height: 170px
+    .little-box
+      color: white
+      padding: 40px
+      h1 
+        font-family: 'Mina', sans-serif
+        font-size: 15px
+        text-align: center
+        margin:  0 5%      
+
+@media only screen and (min-width: 467px) and (max-width: 900px) 
+  .jumbotron-custom
+    height: 250px
+    background: #343a40  
+    .little-box
+      color: white
+      padding: 60px
+      h1 
+        font-family: 'Mina', sans-serif
+        margin:  0 10%
+        font-size: 19px
+        text-align: center
+
+@media only screen and (min-width: 900px) and (max-width: 1300px) 
+  .jumbotron-custom
+    height: 270px
+    background: #343a40  
+    .little-box
+      color: white
+      padding: 100px
+      h1 
+        font-family: 'Mina', sans-serif
+        margin:  0 10%
+        font-size: 19px
+        text-align: center          
+
+
+  
+
+  

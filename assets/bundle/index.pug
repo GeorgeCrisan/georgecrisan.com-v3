@@ -10,13 +10,88 @@ html(lang='en')
     meta(name="author" content="George Crisan at georgerdp@gmail.com")
     meta(name="googlebot" content="index, follow")
     link(rel='shortcut icon', href='../assets/images/icon.ico')
-    link(href="../assets/bundle/bootstrap.min.css", rel="stylesheet")
-    link(href="maincss.css", rel="stylesheet")
+    link(href="bootstrap.min.css", rel="stylesheet")
+    link(href="bundle-dist.css", rel="stylesheet")
 
     
     
 
   body
+    nav.navbar.navbar-expand-md.navbar-dark.bg-dark.sticky-top
+      button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNavAltMarkup', aria-controls='navbarNavAltMarkup', aria-expanded='false', aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+          span.tipic-menu Menu
+
+        
+      #navbarNavAltMarkup.collapse.navbar-collapse.center-class-nav-flex
+        .navbar-nav
+          a.nav-item.nav-link.center-class(href='#') Home
+          a.nav-item.nav-link.center-class(href='#portofolio-link') Portofolio
+          a.nav-item.nav-link.center-class(href='#') About Me
+          a.nav-item.nav-link.center-class(href='#') Contact
+    section.jumbotron-custom
+      div.little-box 
+        h1  Productivity is never an accident. It is always the result of a commitment to excellence, intelligent planning, and focused effort.  
+          
+    main 
+      h1#portofolio-link 
+      div.container-fluid.custom-portofolio-container 
+        div#portofolio
+          div.box1.order 
+            a(href='http://www.mariusmusan.com')
+              img 
+              div.switch0.cover-to-hide 
+                p mariusmusan.com
+          div.box1.order 
+            a(href='http://georgecrisan.com')
+              img
+              div.switch1.cover-to-hide 
+                p georgecrisan.com-v1 webiste!
+          div.box1.order
+            a(href='http://www.georgecrisan.com/projects/reactrecipe2/index.html')
+              img
+              div.switch2.cover-to-hide 
+                p Nina's recipes!
+          div.box1.order 
+            a(href='http://www.georgecrisan.com/projects/pclock/pclock.html')            
+              img
+              div.switch3.cover-to-hide 
+                p Pomodoro Clock!
+          div.box1.order             
+            a(href='https://s.codepen.io/GeorgeCrisan/debug/QQrzwR/NjrYzwgJqoxA')
+              img
+              div.switch4.cover-to-hide 
+                p D3.js Force Project!
+          div.box1.order 
+            a(href='https://s.codepen.io/GeorgeCrisan/debug/VQRgjo/PBMNWxJOnEWr')
+              img
+              div.switch5.cover-to-hide 
+                p Map data with d3.js!
+          div.box1.order 
+            a(href='http://www.georgecrisan.com/projects/wikiViewer/wikiV.html')
+              img
+              div.switch6.cover-to-hide 
+                p Wikipedia viewer! 
+          div.box1.order 
+            a(href='https://s.codepen.io/GeorgeCrisan/debug/aVOmmE/ZorBajbqLnzM')
+              img
+              div.switch7.cover-to-hide 
+                p React.js Game of life!
+          div.box1.order 
+            a
+              img
+              div.switch8.cover-to-hide 
+                p Project to come!
+          div.box1.order 
+            a
+              img
+              div.switch9.cover-to-hide 
+                p Project to come!
+
+
+    div.test 
+
+
 
  
 
