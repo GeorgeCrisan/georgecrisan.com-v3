@@ -2,14 +2,13 @@
 @keyframes fadein 
   0%
     color: #ec87ff
-
   50%
      color: #0FFFFF  
   100%
     color: #ec87ff
-  
+ 
 .navbar-dark .navbar-nav .nav-link
-  color: #0FFFFF
+  color: #fff
   font-family: 'Mina', sans-serif
   &:hover , &:active
     color: #ec87ff
@@ -29,7 +28,14 @@
   color: #fff
 
 
- 
+
+
+body 
+  background: #343a40
+  position: relative
+.bg-dark
+  background-image: linear-gradient(0deg, transparent 24%, rgba(255, 255, 255, .05) 25%, rgba(255, 255, 255, .05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, .05) 75%, rgba(255, 255, 255, .05) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(255, 255, 255, .05) 25%, rgba(255, 255, 255, .05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, .05) 75%, rgba(255, 255, 255, .05) 76%, transparent 77%, transparent)  
+  background-size: 40px 40px
 
 
 
@@ -44,6 +50,7 @@
   margin-left: auto
   border: none
   outline: none
+
   
 
 
@@ -90,8 +97,7 @@
 
 @media only screen and (min-width: 467px) and (max-width: 900px) 
   .jumbotron-custom
-    height: 250px
-    background: #343a40  
+    height: 250px 
     .little-box
       color: white
       padding: 60px
@@ -103,8 +109,7 @@
 
 @media only screen and (min-width: 900px) and (max-width: 1300px) 
   .jumbotron-custom
-    height: 270px
-    background: #343a40  
+    height: 270px  
     .little-box
       color: white
       padding: 100px
