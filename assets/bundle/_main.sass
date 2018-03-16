@@ -9,17 +9,19 @@
 
 @keyframes color-body
   0%
-    background-color: lightblue
-  33%
-    background-color: purple
-  66%
-    background-color: green
+    background-color: #BA55D3
+  25%
+    background-color: #FF00FF
+  50%
+    background-color: #BA55D3
+  75%
+    background-color: #8A2BE2
   100%        
-    background-color: orange
+    background-color: #4B0082
 
 
 body 
-  background-color: #343a40
+  background: #343a40
   top: 54px
   position: relative
   transform: translateY(-54px)      
@@ -41,6 +43,7 @@ body
   padding: 0
 
 #portofolio 
+  animation: color-body ease-in-out 3s infinite
   display: flex
   flex-flow: row wrap
   justify-content: center
