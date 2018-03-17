@@ -2,7 +2,7 @@ $(function(){
 console.log(_);
 console.log($);
 
-console.log('merge');
+console.log('merge bine');
 
 $("a").on('click', function(event) {
 
@@ -79,15 +79,45 @@ function runPortofolio(){
 
 } 
 
+function navigationFunc(){
+    $('.menu-button').click(function(){
+        
+        document.getElementById("mySidenav").style.width = "200px";
+
+        setTimeout(() => {
+            $('.sidenav a').css({'display':'block'});
+            $('.sidenav a').css({'opacity':'1'});
+        }, 500);
+        
+    
+    });
+    
+    
+    
+    $('.closebtn').click(()=>{
+        $('.sidenav a').css({'display':'none'});
+        $('.sidenav a').css({'opacity':'0'});
+        document.getElementById("mySidenav").style.width = "0";
+
+    });
+    
+    $('.sidenav a').click(()=>{
+        $('.sidenav a').css({'display':'none'});
+        document.getElementById("mySidenav").style.width = "0";
+
+    });
+}
+    
 
 
     runPortofolio();
-
+    navigationFunc();
+    
 
     window.sr = ScrollReveal();
     sr.reveal('#portofolio',{ duration: 800,
         delay: 1000,
-        viewFactor: 0.3, });
+        viewFactor: 0.5, });
   
     sr.reveal('#portofolio-links',{ duration: 500,
                                     delay: 1000,

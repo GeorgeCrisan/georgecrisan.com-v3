@@ -19,18 +19,14 @@ html(lang='en')
     
 
   body
-    nav.navbar.navbar-expand-md.navbar-dark.bg-dark.sticky-top.whole-nav
-      button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNavAltMarkup', aria-controls='navbarNavAltMarkup', aria-expanded='false', aria-label='Toggle navigation')
-        span.navbar-toggler-icon
-          span.tipic-menu Menu
-
-        
-      #navbarNavAltMarkup.collapse.navbar-collapse.center-class-nav-flex
-        .navbar-nav
-          a.nav-item.nav-link.center-class(href='#') Home
-          a.nav-item.nav-link.center-class(href='#portofolio-links') Portofolio
-          a.nav-item.nav-link.center-class(href='#') About Me
-          a.nav-item.nav-link.center-class(href='#') Contact
+    span(class='menu-button' ) Menu
+    nav#mySidenav.sidenav
+      a( class='closebtn' ) 
+        i(class="fa fa-times fa-1x" aria-hidden="true").icon-close
+      a(href='#') Home
+      a(href='#portofolio-links') Portofolio
+      a(href='#') About Me
+      a(href='#') Contact
     section.jumbotron-custom
       div.little-box 
         h1  Productivity is never an accident. It is always the result of a commitment to excellence, intelligent planning, and focused effort.  
@@ -50,22 +46,30 @@ html(lang='en')
             a(href='http://www.mariusmusan.com')
               img 
               div.switch0.cover-to-hide 
-                p mariusmusan.com
+                p mariusmusan.com Photo Gallery for Marius Musan Photography.
+                p Bootstrap3, Jquery, Sass, Pug.
+                p 2018
           div.box1.order1
             a(href='http://georgecrisan.com')
               img
               div.switch1.cover-to-hide
-                p georgecrisan.com-v1 webiste!
+                p My old portofolio website.
+                p Bootstrap3, Jquery, Sass, Pug.
+                p 2016
           div.box1.order1
             a(href='http://www.georgecrisan.com/projects/reactrecipe2/index.html')
               img
               div.switch2.cover-to-hide 
                 p Nina's recipes!
+                p React, React-bootstrap,npm create-react-app based on webpack.
+                p 2017
           div.box1.order1
             a(href='http://www.georgecrisan.com/projects/pclock/pclock.html')            
               img
               div.switch3.cover-to-hide 
                 p Pomodoro Clock!
+                p FreeCodeCamp project vanilla Javascript, Pug, Sass.
+                p 2016
           div.box1.order2            
             a(href='https://s.codepen.io/GeorgeCrisan/debug/QQrzwR/NjrYzwgJqoxA')
               img
