@@ -3,3 +3,4 @@
 //@prepros-append lodash.min.js
 //@prepros-append bootstrap.bundle.min.js
 //@prepros-append sreveal.min.js 
+//@prepros-append particles.min.js
